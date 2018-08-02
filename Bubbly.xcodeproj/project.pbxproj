@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C071B102112005B00AFE42D /* ZTBubblyPurchaser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */; };
+		1C071B1B21120FB600AFE42D /* ZTBubblyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B1A21120FB600AFE42D /* ZTBubblyTableViewController.m */; };
+		1C071B2C211215B500AFE42D /* ZTBubblyReceiptValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B2B211215B500AFE42D /* ZTBubblyReceiptValidator.m */; };
+		1C071B30211215CA00AFE42D /* AppleIncRootCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 1C071B2F211215CA00AFE42D /* AppleIncRootCertificate.cer */; };
+		1C071B322112168100AFE42D /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C071B312112168100AFE42D /* libcrypto.a */; };
+		1C071B3521121AC900AFE42D /* ZTAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B3421121AC900AFE42D /* ZTAppVersion.m */; };
+		1C5899B12112666E002F83CD /* ZTBlockerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5899AF2112666E002F83CD /* ZTBlockerViewController.m */; };
+		1C5899B22112666E002F83CD /* ZTBlockerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C5899B02112666E002F83CD /* ZTBlockerViewController.xib */; };
+		1CE129AA2111031A00BE421B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE129A92111031A00BE421B /* AppDelegate.m */; };
+		1CE129B82111031B00BE421B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE129B72111031B00BE421B /* main.m */; };
+		1CE129CC2111057400BE421B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE129C82111057400BE421B /* Assets.xcassets */; };
+		1CE129CD2111057400BE421B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE129C92111057400BE421B /* LaunchScreen.storyboard */; };
+		1CE129CE2111057400BE421B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE129CA2111057400BE421B /* ViewController.m */; };
+		1CE129CF2111057400BE421B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE129CB2111057400BE421B /* Main.storyboard */; };
+		1CE129D2211106F700BE421B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE129D1211106F700BE421B /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C071B0E2112005B00AFE42D /* ZTBubblyPurchaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyPurchaser.h; sourceTree = "<group>"; };
+		1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTBubblyPurchaser.m; sourceTree = "<group>"; };
+		1C071B1921120FB600AFE42D /* ZTBubblyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyTableViewController.h; sourceTree = "<group>"; };
+		1C071B1A21120FB600AFE42D /* ZTBubblyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTBubblyTableViewController.m; sourceTree = "<group>"; };
+		1C071B2A211215B500AFE42D /* ZTBubblyReceiptValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyReceiptValidator.h; sourceTree = "<group>"; };
+		1C071B2B211215B500AFE42D /* ZTBubblyReceiptValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTBubblyReceiptValidator.m; sourceTree = "<group>"; };
+		1C071B2F211215CA00AFE42D /* AppleIncRootCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleIncRootCertificate.cer; sourceTree = "<group>"; };
+		1C071B312112168100AFE42D /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "openssl-ios/libcrypto.a"; sourceTree = "<group>"; };
+		1C071B3321121AC900AFE42D /* ZTAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTAppVersion.h; sourceTree = "<group>"; };
+		1C071B3421121AC900AFE42D /* ZTAppVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTAppVersion.m; sourceTree = "<group>"; };
+		1C071B3621121B3D00AFE42D /* ZTLicenseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTLicenseState.h; sourceTree = "<group>"; };
+		1C5899AE2112666E002F83CD /* ZTBlockerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBlockerViewController.h; sourceTree = "<group>"; };
+		1C5899AF2112666E002F83CD /* ZTBlockerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTBlockerViewController.m; sourceTree = "<group>"; };
+		1C5899B02112666E002F83CD /* ZTBlockerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZTBlockerViewController.xib; sourceTree = "<group>"; };
+		1CE129A52111031A00BE421B /* Bubbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE129A82111031A00BE421B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CE129A92111031A00BE421B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1CE129AB2111031A00BE421B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1CE129B62111031B00BE421B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE129B72111031B00BE421B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CE129C82111057400BE421B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE129C92111057400BE421B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CE129CA2111057400BE421B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1CE129CB2111057400BE421B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1CE129D1211106F700BE421B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE129A22111031A00BE421B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C071B322112168100AFE42D /* libcrypto.a in Frameworks */,
+				1CE129D2211106F700BE421B /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE1299C2111031A00BE421B = {
+			isa = PBXGroup;
+			children = (
+				1CE129A72111031A00BE421B /* Bubbly */,
+				1CE129A62111031A00BE421B /* Products */,
+				1CE129D0211106F700BE421B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE129A62111031A00BE421B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE129A52111031A00BE421B /* Bubbly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE129A72111031A00BE421B /* Bubbly */ = {
+			isa = PBXGroup;
+			children = (
+				1C071B312112168100AFE42D /* libcrypto.a */,
+				1C071B2F211215CA00AFE42D /* AppleIncRootCertificate.cer */,
+				1CE129A82111031A00BE421B /* AppDelegate.h */,
+				1CE129A92111031A00BE421B /* AppDelegate.m */,
+				1CE129AB2111031A00BE421B /* ViewController.h */,
+				1CE129CA2111057400BE421B /* ViewController.m */,
+				1CE129CB2111057400BE421B /* Main.storyboard */,
+				1CE129C82111057400BE421B /* Assets.xcassets */,
+				1CE129C92111057400BE421B /* LaunchScreen.storyboard */,
+				1CE129B62111031B00BE421B /* Info.plist */,
+				1CE129B72111031B00BE421B /* main.m */,
+				1C071B0E2112005B00AFE42D /* ZTBubblyPurchaser.h */,
+				1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */,
+				1C071B1921120FB600AFE42D /* ZTBubblyTableViewController.h */,
+				1C071B1A21120FB600AFE42D /* ZTBubblyTableViewController.m */,
+				1C071B2A211215B500AFE42D /* ZTBubblyReceiptValidator.h */,
+				1C071B2B211215B500AFE42D /* ZTBubblyReceiptValidator.m */,
+				1C071B3321121AC900AFE42D /* ZTAppVersion.h */,
+				1C071B3421121AC900AFE42D /* ZTAppVersion.m */,
+				1C071B3621121B3D00AFE42D /* ZTLicenseState.h */,
+				1C5899AE2112666E002F83CD /* ZTBlockerViewController.h */,
+				1C5899AF2112666E002F83CD /* ZTBlockerViewController.m */,
+				1C5899B02112666E002F83CD /* ZTBlockerViewController.xib */,
+			);
+			path = Bubbly;
+			sourceTree = "<group>";
+		};
+		1CE129D0211106F700BE421B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CE129D1211106F700BE421B /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE129A42111031A00BE421B /* Bubbly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE129BB2111031B00BE421B /* Build configuration list for PBXNativeTarget "Bubbly" */;
+			buildPhases = (
+				1CE129A12111031A00BE421B /* Sources */,
+				1CE129A22111031A00BE421B /* Frameworks */,
+				1CE129A32111031A00BE421B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bubbly;
+			productName = Bubbly;
+			productReference = 1CE129A52111031A00BE421B /* Bubbly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE1299D2111031A00BE421B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Zetetic LLC";
+				TargetAttributes = {
+					1CE129A42111031A00BE421B = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1CE129A02111031A00BE421B /* Build configuration list for PBXProject "Bubbly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CE1299C2111031A00BE421B;
+			productRefGroup = 1CE129A62111031A00BE421B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE129A42111031A00BE421B /* Bubbly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE129A32111031A00BE421B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE129CF2111057400BE421B /* Main.storyboard in Resources */,
+				1CE129CC2111057400BE421B /* Assets.xcassets in Resources */,
+				1C071B30211215CA00AFE42D /* AppleIncRootCertificate.cer in Resources */,
+				1C5899B22112666E002F83CD /* ZTBlockerViewController.xib in Resources */,
+				1CE129CD2111057400BE421B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE129A12111031A00BE421B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C071B102112005B00AFE42D /* ZTBubblyPurchaser.m in Sources */,
+				1CE129CE2111057400BE421B /* ViewController.m in Sources */,
+				1CE129B82111031B00BE421B /* main.m in Sources */,
+				1C5899B12112666E002F83CD /* ZTBlockerViewController.m in Sources */,
+				1CE129AA2111031A00BE421B /* AppDelegate.m in Sources */,
+				1C071B2C211215B500AFE42D /* ZTBubblyReceiptValidator.m in Sources */,
+				1C071B3521121AC900AFE42D /* ZTAppVersion.m in Sources */,
+				1C071B1B21120FB600AFE42D /* ZTBubblyTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1CE129B92111031B00BE421B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1CE129BA2111031B00BE421B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CE129BC2111031B00BE421B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD7G6HRMGV;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "Bubbly/openssl-ios/include/**";
+				INFOPLIST_FILE = Bubbly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bubbly",
+					"$(PROJECT_DIR)/Bubbly/openssl-ios",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.zetetic.Bubbly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CE129BD2111031B00BE421B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD7G6HRMGV;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "Bubbly/openssl-ios/include/**";
+				INFOPLIST_FILE = Bubbly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bubbly",
+					"$(PROJECT_DIR)/Bubbly/openssl-ios",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.zetetic.Bubbly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE129A02111031A00BE421B /* Build configuration list for PBXProject "Bubbly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE129B92111031B00BE421B /* Debug */,
+				1CE129BA2111031B00BE421B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE129BB2111031B00BE421B /* Build configuration list for PBXNativeTarget "Bubbly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE129BC2111031B00BE421B /* Debug */,
+				1CE129BD2111031B00BE421B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CE1299D2111031A00BE421B /* Project object */;
+}
