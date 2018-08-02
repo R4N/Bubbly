@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1322D3E2211384000028985C /* BubblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322D3E1211384000028985C /* BubblyTests.m */; };
+		1322D3EA2113841A0028985C /* ZTAppVersionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322D3E92113841A0028985C /* ZTAppVersionTest.m */; };
+		1322D3EB211385480028985C /* ZTAppVersion.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B3321121AC900AFE42D /* ZTAppVersion.h */; };
 		1C071B102112005B00AFE42D /* ZTBubblyPurchaser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */; };
 		1C071B1B21120FB600AFE42D /* ZTBubblyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B1A21120FB600AFE42D /* ZTBubblyTableViewController.m */; };
 		1C071B2C211215B500AFE42D /* ZTBubblyReceiptValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B2B211215B500AFE42D /* ZTBubblyReceiptValidator.m */; };
@@ -24,7 +27,21 @@
 		1CE129D2211106F700BE421B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE129D1211106F700BE421B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1322D3E4211384000028985C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE1299D2111031A00BE421B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE129A42111031A00BE421B;
+			remoteInfo = Bubbly;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1322D3DF211384000028985C /* BubblyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubblyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1322D3E1211384000028985C /* BubblyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubblyTests.m; sourceTree = "<group>"; };
+		1322D3E3211384000028985C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1322D3E92113841A0028985C /* ZTAppVersionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTAppVersionTest.m; sourceTree = "<group>"; };
 		1C071B0E2112005B00AFE42D /* ZTBubblyPurchaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyPurchaser.h; sourceTree = "<group>"; };
 		1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTBubblyPurchaser.m; sourceTree = "<group>"; };
 		1C071B1921120FB600AFE42D /* ZTBubblyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyTableViewController.h; sourceTree = "<group>"; };
@@ -53,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1322D3DC211384000028985C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CE129A22111031A00BE421B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,10 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1322D3E0211384000028985C /* BubblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1322D3E1211384000028985C /* BubblyTests.m */,
+				1322D3E3211384000028985C /* Info.plist */,
+				1322D3E92113841A0028985C /* ZTAppVersionTest.m */,
+			);
+			path = BubblyTests;
+			sourceTree = "<group>";
+		};
 		1CE1299C2111031A00BE421B = {
 			isa = PBXGroup;
 			children = (
 				1CE129A72111031A00BE421B /* Bubbly */,
+				1322D3E0211384000028985C /* BubblyTests */,
 				1CE129A62111031A00BE421B /* Products */,
 				1CE129D0211106F700BE421B /* Frameworks */,
 			);
@@ -78,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1CE129A52111031A00BE421B /* Bubbly.app */,
+				1322D3DF211384000028985C /* BubblyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +159,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1322D3DE211384000028985C /* BubblyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1322D3E6211384000028985C /* Build configuration list for PBXNativeTarget "BubblyTests" */;
+			buildPhases = (
+				1322D3DB211384000028985C /* Sources */,
+				1322D3DC211384000028985C /* Frameworks */,
+				1322D3DD211384000028985C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1322D3E5211384000028985C /* PBXTargetDependency */,
+			);
+			name = BubblyTests;
+			productName = BubblyTests;
+			productReference = 1322D3DF211384000028985C /* BubblyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1CE129A42111031A00BE421B /* Bubbly */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CE129BB2111031B00BE421B /* Build configuration list for PBXNativeTarget "Bubbly" */;
@@ -149,6 +203,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Zetetic LLC";
 				TargetAttributes = {
+					1322D3DE211384000028985C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1CE129A42111031A00BE421B;
+					};
 					1CE129A42111031A00BE421B = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
@@ -173,11 +231,19 @@
 			projectRoot = "";
 			targets = (
 				1CE129A42111031A00BE421B /* Bubbly */,
+				1322D3DE211384000028985C /* BubblyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1322D3DD211384000028985C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CE129A32111031A00BE421B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +259,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1322D3DB211384000028985C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1322D3EB211385480028985C /* ZTAppVersion.h in Sources */,
+				1322D3EA2113841A0028985C /* ZTAppVersionTest.m in Sources */,
+				1322D3E2211384000028985C /* BubblyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CE129A12111031A00BE421B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,7 +286,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1322D3E5211384000028985C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE129A42111031A00BE421B /* Bubbly */;
+			targetProxy = 1322D3E4211384000028985C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1322D3E7211384000028985C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD7G6HRMGV;
+				INFOPLIST_FILE = BubblyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.zetetic.BubblyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bubbly.app/Bubbly";
+			};
+			name = Debug;
+		};
+		1322D3E8211384000028985C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD7G6HRMGV;
+				INFOPLIST_FILE = BubblyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.zetetic.BubblyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bubbly.app/Bubbly";
+			};
+			name = Release;
+		};
 		1CE129B92111031B00BE421B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -376,6 +500,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1322D3E6211384000028985C /* Build configuration list for PBXNativeTarget "BubblyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1322D3E7211384000028985C /* Debug */,
+				1322D3E8211384000028985C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1CE129A02111031A00BE421B /* Build configuration list for PBXProject "Bubbly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
