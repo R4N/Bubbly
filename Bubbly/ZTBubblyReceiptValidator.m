@@ -10,6 +10,7 @@
 #import "ZTAppVersion.h"
 // TODO: possibly if def this if the validator wants to be re-used for macOS
 #import <UIKit/UIKit.h>
+#import <CommonCrypto/CommonDigest.h>
 
 #include <openssl/pkcs7.h>
 #include <openssl/objects.h>
@@ -523,10 +524,14 @@ static ZTBubblyReceiptValidator  *__sharedValidator = nil;
     NSMutableData *totalData = [NSMutableData dataWithBytes:uuidBytes length:sizeof(uuidBytes)];
     [totalData appendData:opaqueValueData];
     [totalData appendData:bundleIDData];
-    NSMutableData *computedHash = [NSMutableData dataWithLength:SHA_DIGEST_LENGTH];
-    SHA1(totalData.bytes, totalData.length, computedHash.mutableBytes);
+    unsigned char digestBuffer[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1(totalData.bytes, (CC_LONG)totalData.length, digestBuffer);
     NSData *hashFromReceipt = [receipt objectForKey:kReceiptHashValue];
-    return [computedHash isEqualToData:hashFromReceipt];
+    if (memcmp(digestBuffer, hashFromReceipt.bytes, CC_SHA1_DIGEST_LENGTH) == 0) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 - (BOOL)_doesBundleIDMatchFromReceipt:(NSDictionary *)receipt {

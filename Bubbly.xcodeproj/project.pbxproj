@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1322D3E2211384000028985C /* BubblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322D3E1211384000028985C /* BubblyTests.m */; };
-		1322D3EA2113841A0028985C /* ZTAppVersionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322D3E92113841A0028985C /* ZTAppVersionTest.m */; };
+		1322D3EA2113841A0028985C /* ZTAppVersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1322D3E92113841A0028985C /* ZTAppVersionTests.m */; };
 		1322D3EB211385480028985C /* ZTAppVersion.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B3321121AC900AFE42D /* ZTAppVersion.h */; };
+		1322D3EE211387A10028985C /* ZTBubblyReceiptValidator.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B2A211215B500AFE42D /* ZTBubblyReceiptValidator.h */; };
+		13F1582621138ED400BB6437 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13F1582521138ED400BB6437 /* Security.framework */; };
 		1C071B102112005B00AFE42D /* ZTBubblyPurchaser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */; };
 		1C071B1B21120FB600AFE42D /* ZTBubblyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B1A21120FB600AFE42D /* ZTBubblyTableViewController.m */; };
 		1C071B2C211215B500AFE42D /* ZTBubblyReceiptValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C071B2B211215B500AFE42D /* ZTBubblyReceiptValidator.m */; };
@@ -41,7 +43,8 @@
 		1322D3DF211384000028985C /* BubblyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubblyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1322D3E1211384000028985C /* BubblyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubblyTests.m; sourceTree = "<group>"; };
 		1322D3E3211384000028985C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1322D3E92113841A0028985C /* ZTAppVersionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTAppVersionTest.m; sourceTree = "<group>"; };
+		1322D3E92113841A0028985C /* ZTAppVersionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTAppVersionTests.m; sourceTree = "<group>"; };
+		13F1582521138ED400BB6437 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1C071B0E2112005B00AFE42D /* ZTBubblyPurchaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyPurchaser.h; sourceTree = "<group>"; };
 		1C071B0F2112005B00AFE42D /* ZTBubblyPurchaser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTBubblyPurchaser.m; sourceTree = "<group>"; };
 		1C071B1921120FB600AFE42D /* ZTBubblyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTBubblyTableViewController.h; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F1582621138ED400BB6437 /* Security.framework in Frameworks */,
 				1C071B322112168100AFE42D /* libcrypto.a in Frameworks */,
 				1CE129D2211106F700BE421B /* StoreKit.framework in Frameworks */,
 			);
@@ -94,7 +98,7 @@
 			children = (
 				1322D3E1211384000028985C /* BubblyTests.m */,
 				1322D3E3211384000028985C /* Info.plist */,
-				1322D3E92113841A0028985C /* ZTAppVersionTest.m */,
+				1322D3E92113841A0028985C /* ZTAppVersionTests.m */,
 			);
 			path = BubblyTests;
 			sourceTree = "<group>";
@@ -151,6 +155,7 @@
 		1CE129D0211106F700BE421B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13F1582521138ED400BB6437 /* Security.framework */,
 				1CE129D1211106F700BE421B /* StoreKit.framework */,
 			);
 			name = Frameworks;
@@ -263,8 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1322D3EE211387A10028985C /* ZTBubblyReceiptValidator.h in Sources */,
 				1322D3EB211385480028985C /* ZTAppVersion.h in Sources */,
-				1322D3EA2113841A0028985C /* ZTAppVersionTest.m in Sources */,
+				1322D3EA2113841A0028985C /* ZTAppVersionTests.m in Sources */,
 				1322D3E2211384000028985C /* BubblyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
