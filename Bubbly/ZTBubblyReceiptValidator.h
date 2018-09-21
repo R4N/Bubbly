@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "ZTLicenseState.h"
-#import "ZTAppVersion.h"
 
 // Domain for any errors we plan to provide
 FOUNDATION_EXTERN NSString * _Nonnull const ZTLicenseManagerErrorDomain;
@@ -42,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface ZTBubblyReceiptValidator : NSObject
-@property (strong, nonnull, readonly) ZTAppVersion *requiredLicenseVersion;
+@property (readonly) NSInteger requiredLicenseVersion;
 @property ZTLicenseState state;
 @property id <ZTBubblyReceiptValidatorDelegate> delegate;
 + (instancetype _Nonnull)sharedValidator;

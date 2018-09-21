@@ -7,7 +7,6 @@
 //
 
 #import "ZTBubblyReceiptValidator.h"
-#import "ZTAppVersion.h"
 // TODO: possibly if def this if the validator wants to be re-used for macOS
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonDigest.h>
@@ -38,7 +37,7 @@ static NSString * kBubblyBundleID = @"net.zetetic.Bubbly";
 static NSString * kBubblyCurrentVersion = @"1";
 // the version prior to starting free trials
 // should be treated the same as full unlimited purchase
-static NSString * kLicenseRequiredVersion = @"1.0.0";
+static NSInteger kLicenseRequiredVersion = 1;
 static NSString * kBubblyUnlimitedProductIdentifier = @"net.zetetic.Bubbles.unlimited2";
 static NSString * kBubblyTrialProductIdentifier = @"net.zetetic.Bubbles.trial2";
 
@@ -72,7 +71,7 @@ NSString * const kReceiptInAppQuantity = @"kReceiptInAppQuantity";
     self = [super init];
     if (self != nil) {
         _state = ZTLicenseStateNone;
-        _requiredLicenseVersion = [[ZTAppVersion alloc] initWithString:kLicenseRequiredVersion];
+        _requiredLicenseVersion = kLicenseRequiredVersion;
     }
     return self;
 }
@@ -103,8 +102,10 @@ static ZTBubblyReceiptValidator  *__sharedValidator = nil;
     }
     // Okay first thing we need to know is if this user requires a license at all
     NSString *originalVersionString = [receiptInfo objectForKey:kReceiptOriginalVersion];
-    ZTAppVersion *originalVersion = [ZTAppVersion versionWithString:originalVersionString];
-    if ([originalVersion isLessThan:self.requiredLicenseVersion] == NO) {
+    // older app receipts could contain bundle version like 2.1.1, let's remove those points
+    originalVersionString = [originalVersionString stringByReplacingOccurrencesOfString:@"." withString:@""];
+    NSInteger originalVersionInt = [originalVersionString integerValue];
+    if (originalVersionInt < self.requiredLicenseVersion == NO) {
         // License required, check for standard in-app purchase
         NSArray *purchases = [receiptInfo objectForKey:kReceiptInAppPurchases];
         for (NSDictionary *item in purchases) {
